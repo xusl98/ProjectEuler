@@ -51,7 +51,7 @@ public class Ej9 {
             }
 
         }
-        return "No encontrado";
+        return "Not found";
     }
 
 }
