@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package euler;
+package a;
 
 /**
  *
@@ -11,6 +11,13 @@ package euler;
  */
 public class Ej9 {
 
+    /*A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
+
+a2 + b2 = c2
+For example, 32 + 42 = 9 + 16 = 25 = 52.
+
+There exists exactly one Pythagorean triplet for which a + b + c = 1000.
+Find the product abc.*/
     static double limit = 1000;
     static double num1;
     static double num2;
@@ -27,7 +34,7 @@ public class Ej9 {
         for (int i = 1; i <= limit - 2; i++) {
             //This means the first number cannot be bigger than 1000 - 2 meaning that the other 
             //two variables will have at least value 1 (1*1)
-            if (i > 374){
+            if (i > 374) {
                 System.out.println(i);
             }
             num1 = i;
@@ -41,8 +48,8 @@ public class Ej9 {
                     num3 = j;
 
                     if ((Math.pow(num1, 2) + Math.pow(num2, 2) == Math.pow(num3, 2)) && (num1 + num2 + num3 == limit)) {
-                        
-                        System.out.printf("%.0f*%.0f*%.0f = %.0f\n", num1, num2, num3, (num1*num2*num3));
+
+                        System.out.printf("%.0f*%.0f*%.0f = %.0f\n", num1, num2, num3, (num1 * num2 * num3));
                         return num1 + "+" + num2 + "+" + num3 + "=" + limit;
                     }
 
